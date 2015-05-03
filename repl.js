@@ -95,6 +95,8 @@ function spawn(url){
         });
       }, 30000);
 
+      start();
+
       // socket io `connection` should fire now
     });
   });
@@ -105,7 +107,6 @@ function spawn(url){
       console.log('socket disconnected');
       process.exit(1);
     });
-    start();
   });
 }
 
